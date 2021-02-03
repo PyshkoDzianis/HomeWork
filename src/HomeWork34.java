@@ -3,22 +3,26 @@ import java.util.regex.Pattern;
 
 public class HomeWork34 {
     public static void main(String[] args) {
-        String strMain = "Hellow ,World!,I am Happy ,World!";
-        String[] arrSplit = strMain.split("\s");
+        String strMain = "my name is Den,Den is great!";
+        String[] arrSplit = strMain.split("\\s");
         for (int i = 0; i < arrSplit.length; i++) {
             System.out.println(arrSplit[i]);
 
-            int length = strMain.length();
-            for (int j = 0; j <length; j++) {
-                Pattern pattern = Pattern.compile("" + strMain);
+            for (int j = 0; j < arrSplit.length; j++) {
 
-                Matcher matcher = pattern.matcher(""+j);
+
+                Pattern pattern = Pattern.compile(strMain);
+
+
+                Matcher matcher = pattern.matcher(strMain);
                 int count = 0;
-
-                while (matcher.find())
-                    if (strMain.equals(arrSplit[j]))
+              while (matcher.find())
                     count++;
-                System.out.println(word+"встречается:"+count);
+
+               //   while (matcher.find())
+                 //     if (strMain.equals(arrSplit[i]))
+                //  count++;
+                System.out.println("встречается:" + count);
             }
         }
     }
