@@ -10,12 +10,11 @@ public class HomeWork31  {
         for (int i = 0; i < 100; i++) {
            int number = random.nextInt(1000);
 
-            String str1 = ("" + number);
-
+            String str1 =  Integer.toString(number);
             String[] arrSplit = str1.split("\\s", 100);
 
             for (int j = 0; j < arrSplit.length; j++)
-                System.out.println("" + arrSplit[j]);
+                System.out.println( arrSplit[j]);
 
           }
        }

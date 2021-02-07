@@ -1,25 +1,32 @@
 import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
      public class HomeWork32 {
+     public static void main(String[] args) {
 
-    public static void main(String[] args) {
+        Random random1 = new Random();
+        for (int k = 0; k < 100; k++) {
+            int number = random1.nextInt(1000);
+            String str = Integer.toString(number);
 
-       Random random = new Random();
-      for (int i = 0; i < 100; i++) {
-           int number = random.nextInt(1000);
+            StringBuilder builder = new StringBuilder();
+               builder.append(str).append("\s");
+                  String result = builder.toString();
+                System.out.print( result);
 
-           String str1 = ("" + number);
+                  String regex="[1-9]\\d";
 
-         String[] arrSplit = str1.split("\s", 100);
-           for (int k = 0; k < arrSplit.length; k++) ;
+       //      Pattern pattern = Pattern.compile(regex);
+       //     Pattern.matches(regex,result);
 
+         //   Matcher matcher = pattern.matcher(result);
+             String val= result.replaceAll("[1-9]\\d+","-1");
+       //     System.out.println(""+val);
+           // System.out.println("pattern.matcher(str).matches() = " + matcher.matches());
+        //    for (int i = 0; i <result.length() ; i++) {
 
-             System.out.print("" + arrSplit[k]);
-               System.out.print(" ");
-               for (int ch = 10; ch < 100; ch++) ;
-              str1.replaceAll("ch", "-1");
-              System.out.println("Result:" + str1);
-
+            }
+           }
         }
-    }
-}
+
