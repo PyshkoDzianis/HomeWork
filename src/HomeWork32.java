@@ -14,17 +14,17 @@ import java.util.regex.Pattern;
                builder.append(str).append("\s");
                   String result = builder.toString();
                 System.out.print( result);
+String s="-1";
+                  String regex="\\b\\d{1,2}\\b";
 
-                  String regex="[1-9]\\d";
+           Pattern pattern = Pattern.compile(regex);
+        //  Pattern.matches(regex,result);
 
-       //      Pattern pattern = Pattern.compile(regex);
-       //     Pattern.matches(regex,result);
+             Matcher matcher = pattern.matcher(result);
 
-         //   Matcher matcher = pattern.matcher(result);
-             String val= result.replaceAll("[1-9]\\d+","-1");
-       //     System.out.println(""+val);
-           // System.out.println("pattern.matcher(str).matches() = " + matcher.matches());
-        //    for (int i = 0; i <result.length() ; i++) {
+                String value=matcher.replaceAll(""+matcher.replaceAll(s));
+
+       System.out.println(value);
 
             }
            }
