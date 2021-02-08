@@ -14,11 +14,10 @@ import java.util.regex.Pattern;
                builder.append(str).append("\s");
                   String result = builder.toString();
                 System.out.print( result);
-String s="-1";
+            String s="-1";
                   String regex="\\b\\d{1,2}\\b";
 
            Pattern pattern = Pattern.compile(regex);
-        //  Pattern.matches(regex,result);
 
              Matcher matcher = pattern.matcher(result);
 
