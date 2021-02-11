@@ -6,19 +6,20 @@ public class HomeWork31  {
 
     public static void main(String[] args) {
 
-        Random random = new Random();
-        for (int i = 0; i < 100; i++) {
-           int number = random.nextInt(1000);
+       int arr[];
+        arr = new int [100];
+        for (int i=0;i<arr.length;i++)
+            arr[i] = (int) ( Math.random() * 1000);
 
-            String str1 =  Integer.toString(number);
-            String[] arrSplit = str1.split("\\s", 100);
+        String str = "";
+        for (int value : arr) {
+            str = String.format("%s%s\s", str, value);
+        }
+        System.out.println(str);
 
-            for (int j = 0; j < arrSplit.length; j++)
-                System.out.println( arrSplit[j]);
+        }
+     }
 
-          }
-       }
-    }
 
 
 
