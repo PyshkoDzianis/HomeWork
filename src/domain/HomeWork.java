@@ -5,7 +5,11 @@ public abstract class HomeWork {
     private String dueDate;
     private int number;
 
-    public abstract String getHomeWorkType();
+    public HomeWork(String name, String dueDate, int number) {
+
+    }
+
+   public abstract String getHomeWorkType();
     public String getName() {
         return name;
     }
