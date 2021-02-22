@@ -1,6 +1,6 @@
-package domain;
+package by.grodno.denis.model;
 
-  public class ReccurringTask extends HomeWork {
+public class ReccurringTask extends HomeWork {
 
       private int count;
 

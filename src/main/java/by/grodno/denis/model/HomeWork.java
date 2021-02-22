@@ -1,4 +1,4 @@
-package domain;
+package by.grodno.denis.model;
 
 public abstract class HomeWork {
     private String name;
@@ -9,10 +9,12 @@ public abstract class HomeWork {
 
     }
 
-   public abstract String getHomeWorkType();
+    public abstract String getHomeWorkType();
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
